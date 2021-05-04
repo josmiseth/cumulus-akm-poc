@@ -11,4 +11,4 @@ https://akmclient-beta.herokuapp.com/
 
 <a href="https://akmclient-beta.herokuapp.com/" target="_blank">AKM Modeller</a>
 
-[AKM Modeller](https://akmclient-beta.herokuapp.com/){target="_blank"}
+[AKM Modeller](https://akmclient-beta.herokuapp.com/ {target="_blank"})
