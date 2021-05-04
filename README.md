@@ -6,5 +6,8 @@ The OSDU platform is released under the Apache 2 software license. This site is 
 
 Relevant resources
 https://osduforum.org/
+
 https://akmclient-beta.herokuapp.com/
+
+<a href="https://akmclient-beta.herokuapp.com/" target="_blank">Hello, world!</a>
 
