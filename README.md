@@ -9,6 +9,8 @@ https://osduforum.org/
 
 https://akmclient-beta.herokuapp.com/
 
-<a href="https://akmclient-beta.herokuapp.com/" target="_blank">AKM Modeller</a>
 
-[AKM Modeller](https://akmclient-beta.herokuapp.com/" target="_blank)
+# Prosedure for downloading models
+1. Initial: Clone/dowload this repository
+2. 
+
