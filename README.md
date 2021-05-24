@@ -13,14 +13,16 @@ https://akmclient-beta.herokuapp.com/
 
 
 # Prosedure for downloading models
+
 Modell and metamodel files are saved as a project (json file) 
 
----
+
 Initial step: 
 1. Install VSCode editor
 2. Clone/dowload this repository
+3. git pull
 ---
-To Download project (models), type the following in the terminal window :
+To Download latest version of the project (models), type the following in the terminal window :
 
 1.  git pull
 
@@ -33,7 +35,7 @@ To Upload project (models), type the following in the terminal window  :
 
 ---
 
-To prepare the project file for upload (push)
+To prepare the project file for upload 
 
 The AKMM models are save as project files to the "Downloadsfolder" with a name like:
 
@@ -41,16 +43,19 @@ The AKMM models are save as project files to the "Downloadsfolder" with a name l
 
 
 
-The name i the repository is just: "Cumulus.json
+The name i the repository is just: "AKMM-Project_Cumulus.json (without any timestamp)
 
-Copy this file to a temporary file i.e. : "Cumulus_old.json"
-
+Copy the "newly-saved-file-name".json from downloads folder to the local repository/tmpdir.
 
 To merge the new project file with the old file use the git command:
 
-"git merge-file merged-file-name.json new-file-name.json old-file-name.json"
+"git merge-file "merged-file-name".json "empty".json "tempdir/new-file-name".json"
 
 
 
-Ex.:
-git    merge-file Cumulus.json      AKMM-Project_Cumulus_2021-04-23T14_02_15.json     Cumulus_old.json
+---
+Example :
+1. git    merge-file AKMM-Project_Cumulus.json  empty.json  AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
+3. git add .
+4. git commit -m "Updated model Cumulus_CM"
+5. git push  
