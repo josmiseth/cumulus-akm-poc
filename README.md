@@ -20,7 +20,7 @@ Modell and metamodel files are saved as a project (json file)
 Initial step: 
 1. Install VSCode editor
 2. Clone/dowload this repository
-3. git pull
+3. git pull (to download latests version)
 ---
 To Download latest version of the project (models), type the following in the terminal window :
 
@@ -29,10 +29,11 @@ To Download latest version of the project (models), type the following in the te
 ---
 
 To Upload project (models), type the following in the terminal window  :
+```
 1. git add .  (adds all changed files to local repository)
 2. git commit -m "change msg" (Commits the changed files with a message)
 3. git push (uploads the local repository (with changes) to GitHub)
-
+```
 ---
 
 To prepare the project file for upload 
@@ -48,14 +49,16 @@ The name i the repository is just: "AKMM-Project_Cumulus.json (without any times
 Copy the "newly-saved-file-name".json from downloads folder to the local repository/tmpdir.
 
 To merge the new project file with the old file use the git command:
-
-"git merge-file "merged-file-name".json "empty".json "tempdir/new-file-name".json"
-
+```
+ "git merge-file "merged-file-name".json "empty".json "tempdir/new-file-name".json"
+```
 
 
 ---
 Example :
-1. git    merge-file AKMM-Project_Cumulus.json  empty.json  AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
+```
+1. git merge-file AKMM-Project_Cumulus.json  empty.json  AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
 3. git add .
 4. git commit -m "Updated model Cumulus_CM"
 5. git push  
+```
