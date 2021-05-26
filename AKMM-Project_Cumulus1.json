@@ -13,18 +13,8 @@
             {
               "id": "1ce4ebe9-27d2-46bb-f998-9ff0de6c9558",
               "name": "Role",
-<<<<<<< AKMM-Project_Cumulus1.json
-<<<<<<< AKMM-Project_Cumulus1.json
-              "title": "",
-              "description": "",
-=======
               "title": "",
               "description": "",
->>>>>>> tmpdir/AKMM-Project_Cumulus-akm-poc1_2021-05-24T22_41_12.json
-=======
-              "title": "",
-              "description": "",
->>>>>>> tmpdir/AKMM-Project_Cumulus-akm-poc1_2021-05-24T22_41_12.json
               "abstract": false,
               "viewkind": "Object",
               "typename": "Object type",
