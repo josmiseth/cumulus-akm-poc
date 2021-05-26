@@ -24,9 +24,16 @@ Initial step:
 ---
 To Download latest version of the project (models), type the following in the terminal window :
 
-1.  git pull
+1. git pull
+2. In AKM Modeller click on the "File" button and "Choose File", then find the downloaded file in this repository. ex. ..../github/cumulus-akm-poc/AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
 
 ---
+
+# Procedure 1 for uploading models (simple procedure)
+This vil upload copies of the model with timestamp
+
+1. In AKM Modeller click the "File" button then in "Export to file" the " Save Project (all) to File".
+2. Copy the saved file to this repository.
 
 To Upload project (models), type the following in the terminal window  :
 ```
@@ -36,6 +43,9 @@ To Upload project (models), type the following in the terminal window  :
 ```
 ---
 
+
+
+# Procedure alternative 
 To prepare the project file for upload 
 
 The AKMM models are save as project files to the "Downloadsfolder" with a name like:
@@ -57,7 +67,7 @@ To merge the new project file with the old file use the git command:
 ---
 Example :
 ```
-1. git merge-file AKMM-Project_Cumulus.json  empty.json  AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
+1. git merge-file AKMM-Project_Cumulus.json  empty.json  tmpdir/AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
 3. git add .
 4. git commit -m "Updated model Cumulus_CM"
 5. git push  
