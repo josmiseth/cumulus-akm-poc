@@ -21795,7 +21795,7 @@
             },
             {
               "id": "b8c53fe6-55f2-4195-a9e9-6f1beb58286c",
-              "name": "WbMarkerSet",
+              "name": "WellboreMarkerSet",
               "title": "",
               "description": "Wellbore Marker set property definitions",
               "layout": "Tree",
