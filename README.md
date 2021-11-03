@@ -14,61 +14,42 @@ https://akmclient-beta.herokuapp.com/
 
 # Prosedure for downloading models
 
-Modell and metamodel files are saved as a project (json file) 
+Modell and metamodel files are saved as a project (json file) in folders for each sub-project.
 
 
 Initial step: 
 1. Install VSCode editor
-2. Clone/dowload this repository
-3. git pull (to download latests version)
----
-To Download latest version of the project (models), type the following in the terminal window :
-
-1. git pull
-2. In AKM Modeller click on the "File" button and "Choose File", then find the downloaded file in this repository. ex. ..../github/cumulus-akm-poc/AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
-
+2. Go to CUMULUS-AKM-POC repository
+3. Clone/dowload this repository to your local machine
+   
 ---
 
-# Procedure 1 for uploading models (simple procedure)
-This vil upload copies of the model with timestamp
+To Download latest version of the project (models) :
+
+1. Make sure you are in the CUMULUS-AKM-POC repository and in your branch. (not master or main)
+2. git pull (to get latest version, if somone or you has made changes from another computer or cloud)
+3. In AKM Modeller click on the "Model File" blue button and "Choose File", in the Model (light blue) area, then find the file in this local repository folder. ex. ..../github/cumulus-akm-poc/AKMM-Project_Cumulus.json 
+
+---
+
+# Procedure for uploading models
 
 1. In AKM Modeller click the "File" button then in "Export to file" the " Save Project (all) to File".
-2. Copy the saved file to this repository.
+2. Select the project folder in your local repository.
 
-To Upload project (models), type the following in the terminal window  :
-```
-1. git add .  (adds all changed files to local repository)
-2. git commit -m "change msg" (Commits the changed files with a message)
+To update the project (models) in GitHUb, type the following in the terminal window  :
+
+1. git pull ( to make sure you have the latest version from GitHub)
+2. git add .  (adds all changed files to local repository)
+3. git commit -m "change msg" (Commits the changed files with your message)
 3. git push (uploads the local repository (with changes) to GitHub)
-```
----
-
-
-
-# Procedure alternative 
-To prepare the project file for upload 
-
-The AKMM models are save as project files to the "Downloadsfolder" with a name like:
-
-"AKMM-Project_Cumulus_2021-04-23T14_02_15.json"
-
-
-
-The name i the repository is just: "AKMM-Project_Cumulus.json (without any timestamp)
-
-Copy the "newly-saved-file-name".json from downloads folder to the local repository/tmpdir.
-
-To merge the new project file with the old file use the git command:
-```
- "git merge-file "merged-file-name".json "empty".json "tempdir/new-file-name".json"
-```
-
 
 ---
-Example :
-```
-1. git merge-file AKMM-Project_Cumulus.json  empty.json  tmpdir/AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
-3. git add .
-4. git commit -m "Updated model Cumulus_CM"
-5. git push  
-```
+
+# Request for updating the main bransh project (models) in GitHub.
+
+Go to the GitHub repository and select the branch you pushed above.
+1. Click on the "Compare & pull request" button.
+2. Other people can see the changes you have made, and can make comments and approve you pull request. After approval, the changes can be merged into the main branch.
+3. Click on Merge pull request and the changes will be merged into the main branch.
+4. If you are not going to make any more changes, you can delete your bransch, else just leave it and go back to your local repository and the same branch, and make more work on your model.
