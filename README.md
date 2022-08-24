@@ -1,74 +1,102 @@
 # Cumulus AKM Proof of concept
 
+This is an open repository for testing how the Active Knowledge Modelling (AKM) tool can be integrated with the OSDU community, open source software, and data definitions. The work is done as a collaboration between Equinor and Kavca. Kavca is developing as an open source tool for modelling data and workflows.
 
-This is an open respository for testing how the Active Knowledge Modelling (AKM) tool can be integrated with the OSDU community, open source software, and data definintions. The work is done as a collaboration between Equinor and Kavca. Kavca is developing as an open source tool for modelling data and workflows.
-
-The OSDU platform is released under the Apache 2 software license. This site is used to store some of the OSDU data definitions for testing purposes. 
+The OSDU platform is released under the Apache 2 software license. This site is used to store some of the OSDU data definitions for testing purposes.
 
 Relevant resources
 
-https://osduforum.org/
+<https://osduforum.org/>
 
-https://akmclient-beta.herokuapp.com/
+## AKM Models
 
+This is a public repo for AKM models made in AKM Modeller and saved as .json files.
 
-# Prosedure for downloading models
+## Introduction
 
-Modell and metamodel files are saved as a project (json file) 
+AKM Modelling can be done locally with models stored locally on your computer as Project.json files.
+AKM Modelling can also be done as a collaborate task with several team members with Project.json files stored in a GitHub repository.
 
+## Lets get started
 
-Initial step: 
-1. Install VSCode editor
-2. Clone/dowload this repository
-3. git pull (to download latests version)
----
-To Download latest version of the project (models), type the following in the terminal window :
+(Tips: You can duplicate this browser-tab and move it on the side, to have it available when doing the procedure)
 
-1. git pull
-2. In AKM Modeller click on the "File" button and "Choose File", then find the downloaded file in this repository. ex. ..../github/cumulus-akm-poc/AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
+Open the webpage:  
 
----
+<https://akmclient-beta.herokuapp.com/modelling> latest version with newest features
 
-# Procedure 1 for uploading models (simple procedure)
-This vil upload copies of the model with timestamp
-
-1. In AKM Modeller click the "File" button then in "Export to file" the " Save Project (all) to File".
-2. Copy the saved file to this repository.
-
-To Upload project (models), type the following in the terminal window  :
-```
-1. git add .  (adds all changed files to local repository)
-2. git commit -m "change msg" (Commits the changed files with a message)
-3. git push (uploads the local repository (with changes) to GitHub)
-```
----
-
-
-
-# Procedure alternative 
-To prepare the project file for upload 
-
-The AKMM models are save as project files to the "Downloadsfolder" with a name like:
-
-"AKMM-Project_Cumulus_2021-04-23T14_02_15.json"
-
-
-
-The name i the repository is just: "AKMM-Project_Cumulus.json (without any timestamp)
-
-Copy the "newly-saved-file-name".json from downloads folder to the local repository/tmpdir.
-
-To merge the new project file with the old file use the git command:
-```
- "git merge-file "merged-file-name".json "empty".json "tempdir/new-file-name".json"
-```
-
+<https://akmclient.herokuapp.com/modelling> previous more tested version
 
 ---
-Example :
-```
-1. git merge-file AKMM-Project_Cumulus.json  empty.json  tmpdir/AKMM-Project_Cumulus_2021-04-23T14_02_15.json 
-3. git add .
-4. git commit -m "Updated model Cumulus_CM"
-5. git push  
-```
+
+***(In AKM Modeller)***
+
+Select "Modelling" in the top menu.
+
+## Open and save local files
+
+### 1. Open a Project.json file in AKM Modeller
+
+<details><summary markdown="span">Open local project files: <code> Click: "Choose file" button</code></summary>
+
+Click on: Project files: "Choose file" button and select the project file you want to load (.json file).
+
+![alt text](./img/ChooseFile.png)
+
+The selected file will be loaded in the AKM Modeller.
+
+</details>
+
+---
+
+### 2. Then Work with your model project
+
+See the documentation how to used AKM Modeller in "Help" in top menu.
+
+---
+
+### 3. Save your model project to Local Project.json file
+
+<details><summary markdown="span">To save local project files: <code> Click on: "Save" button</code></summary>
+
+To save the current project.json file Click on the "Save" button.
+
+The file will by default be saved in Download folder as a "Projectname".json file.
+
+</details>
+
+---
+---
+---
+
+## Open and save models on GitHub repository
+
+To open a model stored on GitHub repository:
+
+<details><summary markdown="span">Open GitHub repository AKM project files in AKM Modeller: <code> Click on: "GitHub" button</code></summary>
+..
+
+Click on "GitHub" button to open the dialog for GitHub repository and fill in the required fields.
+
+- Repository URL:  <https://api.github.com/users/UserName/repos/>
+
+then click on: "LIST MODELS" button and then select a model in the "Select Model" dropdown list.
+
+(The list is from the **main** branch of the repository.)
+
+The model will be loaded in AKM Modeller.
+
+Click on "X" button in the top right corner to close the GitHub repository select dialog.
+
+---
+
+</details>
+
+---
+
+To upload a model to GitHub repository:
+
+First make sure you have saved your Project.json file locally (the model you want to upload), as described in item 3 above.
+
+
+[Procedure for uploading to Github repository](UploadModels.md)
