@@ -99,4 +99,4 @@ To upload a model to GitHub repository:
 First make sure you have saved your Project.json file locally (the model you want to upload), as described in item 3 above.
 
 
-[Procedure for uploading to Github repository](UploadModels.md)
+[Procedure for uploading to Github repository](./UploadModels.md)
